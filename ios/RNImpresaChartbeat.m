@@ -1,4 +1,7 @@
 #import "RNImpresaChartbeat.h"
+#import <React/RCTLog.h>
+#import <Chartbeat/CBTracker.h>
+#import <React/RCTRootView.h>
 
 @implementation RNImpresaChartbeat
 
