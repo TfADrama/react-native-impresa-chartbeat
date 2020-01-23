@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 function Chartbeat() {
-  const { setupTracker, callAnalytics } = NativeModules.RNChartbeat;
+  const { setupTracker, callAnalytics } = NativeModules.RNImpresaChartbeat;
 
   const setup = () => {
     setupTracker(1111, 'domain');
