@@ -2,7 +2,7 @@
 
 ## Getting started
 
-`$ npm install react-native-impresa-chartbeat --save`
+`$ npm install react-native-impresa-chartbeat@git+https://github.com/TfADrama/react-native-impresa-chartbeat.git --save`
 
 `$ react-native link react-native-impresa-chartbeat`
 
