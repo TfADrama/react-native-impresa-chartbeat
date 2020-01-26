@@ -7,6 +7,9 @@
 ### Mostly automatic installation
 
 `$ react-native link react-native-impresa-chartbeat`
+`cd ios/`
+`pod install`
+
 
 ### Manual installation
 
