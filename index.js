@@ -1,21 +1,16 @@
-import { NativeModules } from 'react-native';
+import { NativeModules } from "react-native";
 
 function Chartbeat() {
-  const { setupTracker, callAnalytics } = NativeModules.RNImpresaChartbeat;
-
-  const setup = () => {
-    setupTracker(1111, 'domain');
-  };
-
-  const sendAnalytics = (message, title) => {
-    callAnalytics(message, title);
-  };
+  const { setupTracker, callAnalytics } = NativeModules.RNImpresaNetscope;
 
   return {
-    setup,
-    sendAnalytics,
+    setupTracker: (accountId, domain) => {
+      setupTracker(accountId, domain);
+    },
+    sendAnalytics: (message, title) => {
+      callAnalytics(message, title);
+    }
   };
 }
 
 export default Chartbeat();
-
